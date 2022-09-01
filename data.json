@@ -1,7 +1,12 @@
 [
-  {
-    "school" : "Santa Rosa Junior College",
-    "logo" : "image",
-    "link" : "link to school"
-  }
+    {
+      "school" : "Santa Rosa Junior College",
+      "logo" : "image",
+      "link" : "santarosa.edu"
+    },
+    {
+      "school" : "Arizona State University",
+      "logo" : "image",
+      "link" : "asu.edu"
+    }
 ]
