@@ -8,10 +8,59 @@
     <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+		ol {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		li {
+			display: inline-block;
+      padding: 20px;
+		}
+    img {
+      max-width: 75%;
+    }
+	</style>
   </head>
   <body>
-    <div id="list"></div>
+    <div id="myApp"></div>
 
+    <script type="text/babel">
+"use strict";
+
+ 
+    function SchoolList(props) {
+      return <div>
+          <ol>
+            {           
+              props.list.map( 
+                (item,index) => (
+                  <li key={index}>
+                    <h2>
+                      {item.schoolname}
+                    </h2>
+                    <img src={item.image} alt={item.about}></img>
+                    <p>Click <a href={item.link}>here</a> for more information.</p>
+                  </li>
+                )
+              )
+            }
+          </ol>
+        </div>;
+    }
+
+
+  $.getJSON("nowhere", function(jsonFromJquery) {
+   
+    const myRoot = ReactDOM.createRoot(document.getElementById('myApp'));
     
+    myRoot.render(
+      <SchoolList list={jsonFromJquery} />
+    );
+  }
+  );
+    </script>
   </body>
 </html>

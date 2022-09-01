@@ -1,12 +1,20 @@
 [
     {
-      "school" : "Santa Rosa Junior College",
-      "logo" : "image",
-      "link" : "santarosa.edu"
+        "schoolname":"Santa Rosa Junior College",
+        "image":"https://oaec.org/wp-content/uploads/2014/10/SRJC-Logo.jpeg",
+        "about":"SRJC logo",
+        "link":"https://www.santarosa.edu"
     },
     {
-      "school" : "Arizona State University",
-      "logo" : "image",
-      "link" : "asu.edu"
+        "schoolname":"Arizona State Univeristy",
+        "image":"https://www.ashoka.org/sites/default/files/asu-logo.jpg",
+        "about":"ASU logo",
+        "link":"https://www.asu.edu"
+    },
+    {
+        "schoolname":"Unknown School for PhD",
+        "image":"https://cdn4.vectorstock.com/i/thumb-large/76/28/unknown-person-user-icon-for-web-vector-34757628.jpg",
+        "about":"Unknown",
+        "link":"#"
     }
 ]
